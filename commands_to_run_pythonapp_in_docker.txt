@@ -1,0 +1,10 @@
+1) Once you create the instance we need to install the docker inside the instance.
+-- yum install docker -y
+2) Start the docker services
+-- systemctl start docker.service
+3)Now we need to build our code and deploy into the docker container.
+-- docker build -t <imagename>:<tagname>
+4)To run the docker container
+-- docker run -dit -p 80:8000 <image id>
+5) Go to browser and access the ec2 instance end point with port 80.
+http://18.224.140.63:80/
